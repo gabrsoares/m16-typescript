@@ -1,0 +1,56 @@
+.btn {
+    cursor: pointer;
+    text-align: center;
+}
+
+.action-primary {
+    color: #000;
+}
+
+.bg-action-primary {
+    background-color: rgb(69, 128, 238);
+}
+
+.b--action-primary {
+    border-color: rgb(47, 47, 243);
+}
+
+.action-secondary {
+    color: #000;
+}
+
+.bg-action-secondary {
+    background-color: rgb(1, 221, 173);
+}
+
+.b--action-secondary {
+    border-color: rgb(65, 109, 99);
+}
+
+.action-dark {
+    color: #000;
+}
+
+.bg-action-dark {
+    background-color: rgb(34, 32, 32);
+}
+
+.b--action-dark {
+    border-color: #000;
+}
+
+.bSize-action-big {
+    width: 220px;
+    height: 60px;
+}
+
+.bSize-action-medium {
+    width: 170px;
+    height: 45px;
+}
+
+.bSize-action-small {
+    width: 120px;
+    height: 30px;
+}
+
