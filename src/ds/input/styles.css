@@ -1,0 +1,30 @@
+.inputLabel{
+    margin-right: .5rem;
+}
+
+.size-action-big {
+    width: 200px;
+    height: 60px;
+}
+
+.size-action-medium {
+    width: 150px;
+    height: 45px;
+}
+
+.size-action-small {
+    width: 100px;
+    height: 30px;
+}
+
+.fSize-action-big {
+    font-size: 1.4rem;
+}
+
+.fSize-action-medium {
+    font-size: 1.2rem;
+}
+
+.fSize-action-small {
+    font-size: 1rem;
+}

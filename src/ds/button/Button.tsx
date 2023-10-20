@@ -1,13 +1,15 @@
 import React, { FunctionComponent, useState } from 'react'
 
 interface ButtonProps {
-	children: React.ReactNode
+	children: string
 	variation: string
 	size: string
 }
 
+type stateType = string
+
 const Button: FunctionComponent<ButtonProps> = (props) => {
-	const [textContent, setTextContent] = useState(props.children)
+	const [textContent, setTextContent] = useState<stateType>(props.children)
 
 	const color = `action-${props.variation}`
 	const bgColor = `bg-action-${props.variation}`
