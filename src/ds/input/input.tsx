@@ -1,8 +1,9 @@
 import React, { FunctionComponent } from 'react'
 import './styles.css'
 import Flex from '../flex/Flex'
+import { defaultProps } from '..'
 
-interface inputProps {
+interface inputProps extends defaultProps {
 	fSize?: string
 	size?: string
 	setId?: string

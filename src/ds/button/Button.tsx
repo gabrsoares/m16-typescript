@@ -1,12 +1,12 @@
-import React, { FunctionComponent, useState } from 'react'
+import React, { FunctionComponent, ReactNode, useState } from 'react'
+import { defaultProps } from '..'
+import './styles.css'
 
-interface ButtonProps {
-	children: string
-	variation: string
+interface ButtonProps extends defaultProps {
 	size: string
 }
 
-type stateType = string
+type stateType = ReactNode
 
 const Button: FunctionComponent<ButtonProps> = (props) => {
 	const [textContent, setTextContent] = useState<stateType>(props.children)

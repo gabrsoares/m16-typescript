@@ -1,23 +1,22 @@
 import React, { FunctionComponent } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import { Button, Flex, Input, Select } from './ds'
 
 const App: FunctionComponent = () => {
 	return (
 		<div className='App'>
-			<header className='App-header'>
-				<img src={logo} className='App-logo' alt='logo' />
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a
-					className='App-link'
-					href='https://reactjs.org'
-					target='_blank'
-					rel='noopener noreferrer'>
-					Learn React
-				</a>
-			</header>
+			<Flex direction='column' align='flex-start' justify='center'>
+				<Input type='text' direction='column' label='Nome' setId='nome' />
+				<Input type='text' direction='column' label='Email' setId='email' />
+				<Select direction='column' labelText='Gênero:'>
+					<option>Masculino</option>
+					<option>Feminino</option>
+					<option>Outro</option>
+				</Select>
+				<Button variation='secondary' size='small'>
+					Enviar
+				</Button>
+			</Flex>
 		</div>
 	)
 }

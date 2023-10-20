@@ -24,6 +24,10 @@
             "error",
             "tab"
         ],
+        "prettier/prettier": [
+            "error",
+            { "endOfLine": "auto" }
+          ],
         "linebreak-style": [
             "error",
             "windows"

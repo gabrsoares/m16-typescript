@@ -1,11 +1,11 @@
 import './styles.css'
-import React, { FunctionComponent, ReactNode } from 'react'
+import React, { FunctionComponent } from 'react'
+import { defaultProps } from '..'
 
-interface flexProps {
+interface flexProps extends defaultProps {
 	direction?: string
 	align?: string
 	justify?: string
-	children: ReactNode
 }
 
 const Flex: FunctionComponent<flexProps> = (props) => {
