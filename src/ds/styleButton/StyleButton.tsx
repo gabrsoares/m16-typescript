@@ -1,5 +1,4 @@
 import React, { FunctionComponent, ReactNode, useState } from 'react'
-import './styles.css'
 
 const StyleButton: FunctionComponent = () => {
 	type stateType = ReactNode

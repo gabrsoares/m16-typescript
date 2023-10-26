@@ -3,15 +3,17 @@ import './styles.css'
 import Flex from '../flex/Flex'
 import { defaultProps } from '..'
 
-interface inputProps extends defaultProps {
-	fSize?: string
-	size?: string
-	setId?: string
-	direction?: string
+interface Input extends defaultProps {
+	fSize: string
+	size: string
+	setId: string
+	direction: string
 	type: string
-	placeholder?: string
-	label?: string
+	placeholder: string
+	label: string
 }
+
+type inputProps = Partial<Input>
 
 const Input: FunctionComponent<inputProps> = (props) => {
 	const fSize = `fSize-action-${props.fSize}`

@@ -3,13 +3,15 @@ import Flex from '../flex/Flex'
 import './styles.css'
 import { defaultProps } from '..'
 
-interface selectProps extends defaultProps {
-	size?: string
-	fSize?: string
-	labelText?: string
-	setId?: string
-	direction?: string
+interface Select extends defaultProps {
+	size: string
+	fSize: string
+	labelText: string
+	setId: string
+	direction: string
 }
+
+type selectProps = Partial<Select>
 
 const Select: FunctionComponent<selectProps> = (props) => {
 	const color = `color-action-${props.variation}`

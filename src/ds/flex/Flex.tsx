@@ -2,11 +2,13 @@ import './styles.css'
 import React, { FunctionComponent } from 'react'
 import { defaultProps } from '..'
 
-interface flexProps extends defaultProps {
-	direction?: string
-	align?: string
-	justify?: string
+interface Flex extends defaultProps {
+	direction: string
+	align: string
+	justify: string
 }
+
+type flexProps = Partial<Flex>
 
 const Flex: FunctionComponent<flexProps> = (props) => {
 	const direction = `direction-action-${props.direction}`
