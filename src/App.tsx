@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import './App.css'
-import { Button, Flex, Input, Select } from './ds'
+import { Button, Flex, Input, Select, StyleButton } from './ds'
 
 const App: FunctionComponent = () => {
 	return (
@@ -16,6 +16,7 @@ const App: FunctionComponent = () => {
 				<Button variation='secondary' size='small'>
 					Enviar
 				</Button>
+				<StyleButton />
 			</Flex>
 		</div>
 	)

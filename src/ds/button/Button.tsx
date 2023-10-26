@@ -16,13 +16,11 @@ const Button: FunctionComponent<ButtonProps> = (props) => {
 	const bColor = `b--action-${props.variation}`
 	const bSize = `bSize-action-${props.size}`
 
-	const delay = (ms: number) =>
-		new Promise((resolve) => setTimeout(resolve, ms))
-
-	const handleClick = async () => {
+	const handleClick = () => {
 		setTextContent('Carregando...')
-		await delay(3000)
-		setTextContent('Enviado!')
+		setTimeout(() => {
+			setTextContent('Enviado!')
+		}, 3000)
 	}
 
 	return (
